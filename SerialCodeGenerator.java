@@ -1,4 +1,4 @@
-package com.playtika.serialcode;
+package com.serialcode;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
