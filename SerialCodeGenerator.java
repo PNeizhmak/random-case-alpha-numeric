@@ -13,7 +13,7 @@ public class SerialCodeGenerator {
     public static final int CODES_AMOUNT = 60000;
     public static final int CODE_LENGTH = 16;
 
-    public static final String FILE_PATH = "src/main/java/com/playtika/serialcode/output/code1.csv";
+    public static final String FILE_PATH = "output/code1.csv";
 
     public static void main(String[] args) {
         Random random = new Random();
