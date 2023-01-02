@@ -13,13 +13,14 @@ public class SerialCodeGenerator {
     public static final int CODES_AMOUNT = 60000;
     public static final int CODE_LENGTH = 16;
 
-    public static final String FILE_PATH = "output/code1.csv";
+    public static final String FILE_PATH = "output/code.csv";
 
     public static void main(String[] args) {
         Random random = new Random();
-        try (FileOutputStream code1 = new FileOutputStream(FILE_PATH)) {
-            System.out.println("-----write to code1-----");
-            writeToFile(random, code1);
+        try (FileOutputStream fos = new FileOutputStream(FILE_PATH)) {
+            System.out.println("-----start generating-----");
+            writeToFile(random, fos);
+            System.out.println("-----finished-----");
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
